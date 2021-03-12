@@ -12,10 +12,15 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js",
+    "commit": "cz",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --headed",
+    "test:unit": "react-scripts test --watchAll=false",
+    "test:e2e": "start-server-and-test dev :3000 cy:open"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +39,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.3",
+    "cypress": "^6.6.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.21.0",
+    "eslint-plugin-react": "^7.22.0",
+    "start-server-and-test": "^1.12.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
