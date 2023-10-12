@@ -1,9 +1,6 @@
-import { values } from '../config/constants'
-
-const getPokemons = async (limit = 10, offset = 0) => {
-  const { API_URL} = values
+const getRickMorty = async () => {
   try {
-    const url = `${API_URL}pokemon?limit=${limit}&offset=${offset}`;
+    const url = `https://rickandmortyapi.com/api/character/1,2,3,4,5,6,7,8,9,10`;
     const response = await fetch(url);
     const data = await response.json();
     return data;
@@ -12,4 +9,4 @@ const getPokemons = async (limit = 10, offset = 0) => {
   }
 }
 
-export default getPokemons;
+export default getRickMorty;

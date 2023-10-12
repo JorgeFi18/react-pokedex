@@ -2,10 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Requirements
+
+- NodeJS v16
+
 ## Install dependencies
 
 In order to install dependencies, run:
- ### `npm install`
+
+### `npm install`
+
 ## Available Scripts
 
 In the project directory, you can run:

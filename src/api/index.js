@@ -1,5 +1,5 @@
-import getPokemons from './getPokemons';
+import getRickMorty from './getPokemons';
 
 export {
-  getPokemons
+  getRickMorty
 }
